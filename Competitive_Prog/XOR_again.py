@@ -4,14 +4,10 @@
 T = int(input())
 
 for i in range(T):
-    final_ary = list()
-    total=0
-    N = int(input())
-    num = list(map(int, input().strip().split()))
-    for i in num:
-        for j in num:
-            total = j+i
-            final_ary.append(total)
-    total = sum(final_ary)
-    print(final_ary)
-    print(total)
+    n=int(input())
+    l1=list(map(int,input().split()))
+    a=l1[0]+l1[0]
+    for j in range(1,n):
+        a=a^(2*l1[j])
+    print(a)
+
